@@ -1,0 +1,13 @@
+---
+- hosts: webservers
+
+  vars:
+    oldskool: "1.2.3"
+    bracket: "and close bracket"
+
+  tasks:
+  - name: unset variable
+    action: command echo {{thisvariable}} is not set in this playbook
+
+  - name: trailing whitespace
+    action: command echo do nothing
