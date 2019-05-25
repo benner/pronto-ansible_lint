@@ -1,5 +1,5 @@
 # Pronto runner for ansible-lint
-Pronto runner for [ansible-lint](https://github.com/ansible/ansible-lint), a Python Style Guide Enforcer. [What is Pronto?](https://github.com/mmozuras/pronto)
+Pronto runner for [ansible-lint](https://github.com/ansible/ansible-lint), best practices checker for Ansible. [What is Pronto?](https://github.com/mmozuras/pronto)
 
 
 ## Contribution Guidelines
