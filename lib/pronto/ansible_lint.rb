@@ -50,8 +50,9 @@ module Pronto
       Dir.chdir(git_repo_path) do
         yaml_files = filter_yaml_files(files)
         files = yaml_files.join(' ')
+        extra = ENV['PRONTO_ANSIBLE_LINT_OPTS']
         if !files.empty?
-          cmd = "#{executable} --nocolor --parseable-severity #{files}"
+          cmd = "#{executable} --nocolor --parseable-severity #{extra} #{files}"
           parse_output `#{cmd}`
         else
           []
