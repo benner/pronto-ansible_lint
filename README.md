@@ -2,6 +2,11 @@
 Pronto runner for [ansible-lint](https://github.com/ansible/ansible-lint), a Python Style Guide Enforcer. [What is Pronto?](https://github.com/mmozuras/pronto)
 
 
+## Usage
+* `gem install pronto-ansible_lint`
+* `pronto run`
+* `PRONTO_ANSIBLE_LINT_OPTS="-x 301" pronto run` for passing CLI options to `ansible-lint` 
+
 ## Contribution Guidelines
 ### Installation
 `git clone` this repo and `cd pronto-ansible_lint`

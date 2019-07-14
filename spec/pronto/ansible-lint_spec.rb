@@ -102,11 +102,14 @@ module Pronto
             updated_function_def = <<-EOF
           - tasks:
             - git: repo=hello
+            - name: a
+              command: a
             EOF
 
             add_to_index('main.yaml', updated_function_def)
 
             create_commit
+            ENV['PRONTO_ANSIBLE_LINT_OPTS'] = '-x 301'
           end
 
           it 'returns correct error message' do
